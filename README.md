@@ -1,16 +1,34 @@
-# smart_parking
+# ParkEZ - An iOT based Smart Parking Assistant
 
-A new Flutter project.
+### Smart Parking Assistant
 
-## Getting Started
+This project implements a **Smart Parking Assistant** using the **RV IoT Kit** and an **ESP32 microcontroller**, combined with a custom **Flutter-based mobile application** for real-time monitoring and control. The system automates vehicle detection, PIN-based access control, slot occupancy tracking, and car exit management.
 
-This project is a starting point for a Flutter application.
+#### Key Features:
+1. **Vehicle Detection**:  
+   A proximity sensor detects incoming cars and prompts the user to enter a PIN via a matrix keypad displayed on a TFT screen.
 
-A few resources to get you started if this is your first Flutter project:
+2. **Access Control**:  
+   - If the PIN is correct, the servo motor opens the gate, and a NeoPixel LED turns green to indicate access granted.  
+   - If the PIN is incorrect, access is denied, and the LED glows red.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. **Slot Management**:  
+   - The parking lot has **4 total slots**.  
+   - When all slots are occupied, access is denied until a car exits.  
+   - Cars can exit by entering the PIN `4321`, which frees up a slot for the next vehicle.  
+   - During car exit, the NeoPixel LED glows **blue** to indicate the process.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. **Mobile Application**:  
+   - A custom **Flutter app** provides real-time updates on slot occupancy and allows manual control.  
+   - The app communicates wirelessly with the ESP32 microcontroller.
+
+5. **Cloud Integration**:  
+   - Data such as slot occupancy and access attempts are uploaded to **ThingSpeak** for graphical analysis and cloud-based tracking.
+
+#### Workflow:
+- **Car Entry**:  
+   The proximity sensor detects a car, and the user enters a PIN. If access is granted, the gate opens, and the slot count is updated.  
+- **Car Exit**:  
+   The PIN `4321` is entered to reduce the slot count, allowing the next car to enter. During this process, the NeoPixel LED glows **blue**.
+
+This project provides a seamless and automated parking solution with real-time monitoring, efficient slot management, and cloud-based analytics.
