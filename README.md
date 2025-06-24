@@ -32,3 +32,11 @@ This project implements a **Smart Parking Assistant** using the **RV IoT Kit** a
    The PIN `4321` is entered to reduce the slot count, allowing the next car to enter. During this process, the NeoPixel LED glows **blue**.
 
 This project provides a seamless and automated parking solution with real-time monitoring, efficient slot management, and cloud-based analytics.
+
+
+Images showing the hardware simulation of the Access Granted and Access Denied features: 
+![image](https://github.com/user-attachments/assets/edee2ade-93fe-4223-96cd-1c39d6dc66b3)
+![IMG_8251](https://github.com/user-attachments/assets/48108a12-c924-4e34-b1f4-1c24d1ee6820)
+
+
+
