@@ -34,9 +34,11 @@ This project implements a **Smart Parking Assistant** using the **RV IoT Kit** a
 This project provides a seamless and automated parking solution with real-time monitoring, efficient slot management, and cloud-based analytics.
 
 
-Images showing the hardware simulation of the Access Granted and Access Denied features: 
-![image](https://github.com/user-attachments/assets/edee2ade-93fe-4223-96cd-1c39d6dc66b3)
-![IMG_8251](https://github.com/user-attachments/assets/48108a12-c924-4e34-b1f4-1c24d1ee6820)
+## Images showing the hardware simulation of the Access Granted and Access Denied features:
+
+<img src="https://github.com/user-attachments/assets/9682ebae-b34f-4924-a969-d47d055315e1" alt="Access Granted Simulation" width="500">
+
+<img src="https://github.com/user-attachments/assets/48108a12-c924-4e34-b1f4-1c24d1ee6820" alt="Access Denied Simulation" width="500">
 
 
 
