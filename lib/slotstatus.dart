@@ -11,7 +11,7 @@ class SlotStatusScreen extends StatefulWidget {
 class _SlotStatusScreenState extends State<SlotStatusScreen> {
   String slotStatus = 'Loading...';
 
-  // ✅ Use your ESP32 IP address here
+  // ✅ ESP32 local IP address
   final String esp32IP = 'http://172.20.10.3';
 
   @override
@@ -27,7 +27,13 @@ class _SlotStatusScreenState extends State<SlotStatusScreen> {
       if (response.statusCode == 200) {
         final value = response.body.trim();
         setState(() {
-          slotStatus = (value == '1') ? 'Occupied' : 'Free';
+          if (value == '1') {
+            slotStatus = 'Occupied'; // 🔴 All 4 slots full
+          } else if (value == '0') {
+            slotStatus = 'Free'; // 🟢 At least 1 slot free
+          } else {
+            slotStatus = 'Invalid response';
+          }
         });
       } else {
         setState(() {
@@ -55,9 +61,8 @@ class _SlotStatusScreenState extends State<SlotStatusScreen> {
           width: double.infinity,
           margin: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: slotStatus == 'Occupied'
-                ? Colors.red[700]
-                : Colors.green[600],
+            color:
+                slotStatus == 'Occupied' ? Colors.red[700] : Colors.green[600],
             borderRadius: BorderRadius.circular(20),
           ),
           child: Center(
