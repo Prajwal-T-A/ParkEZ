@@ -36,9 +36,32 @@ This project provides a seamless and automated parking solution with real-time m
 
 ## Images showing the hardware simulation of the Access Granted and Access Denied features:
 
-<img src="https://github.com/user-attachments/assets/9682ebae-b34f-4924-a969-d47d055315e1" alt="Access Granted Simulation" width="500">
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/9682ebae-b34f-4924-a969-d47d055315e1" alt="Access Granted Simulation" width="400">
+  <img src="https://github.com/user-attachments/assets/e0dfa21c-3b41-4946-aae7-5cb2292234b0" alt="Access Denied Simulation" width="400">
+</div>
 
-<img src="https://github.com/user-attachments/assets/48108a12-c924-4e34-b1f4-1c24d1ee6820" alt="Access Denied Simulation" width="500">
+## The Flutter App Interface:
 
+### The Intro Page:
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/063bb565-2fda-4aaf-8a44-080fb6ff3d8b" alt="Intro Page" width="500">
+</div>
 
+### The Home Page:
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/5fdf4ef7-5325-4851-ab0e-202359a7b00f" alt="Home Page" width="500">
+</div>
 
+### Slot Status Page:
+<div style="text-align: center;">
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="https://github.com/user-attachments/assets/f8f6bf3f-0013-4c7d-9ad2-dd93fe234be6" alt="Slot Access Page 1" width="45%">
+    <img src="https://github.com/user-attachments/assets/0990a04a-4b01-49fb-90e2-e173cd6080e9" alt="Slot Access Page 2" width="45%">
+  </div>
+</div>
+
+### Slot Access Logs Page:
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/f015772a-87fd-46a9-b043-b70b10771214" alt="Slot Access Logs Page" width="500">
+</div>
